@@ -61,7 +61,7 @@ end
 -- picks a picture and types the word under it.
 function drawChoices(set, names, y)
   gfx.setColor(Color[0])
-  gfx.rectangle("fill", 0, y - 44, SCREEN_W, 84)
+  gfx.rectangle("fill", 0, y - 46, SCREEN_W, 92)
   local gap = SCREEN_W / (#names + 1)
   gfx.setFont(NAME_FONT)
   for i = 1, #names do
