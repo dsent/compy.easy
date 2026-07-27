@@ -3,34 +3,34 @@
 -- in that picture's own colour list below it.
 
 CAT = {
-  "..X......X..",
-  ".XXX....XXX.",
+  ".XX......XX.",
+  ".XIX....XIX.",
   ".XXXXXXXXXX.",
+  "XXXXXXXXXXXX",
+  "XXOOXXXXOOXX",
+  "XXXXXXXXXXXX",
+  "XXXXXNNXXXXX",
   ".XXXXXXXXXX.",
-  ".XXOOXXOOXX.",
-  ".XXXXXXXXXX.",
-  ".XXXXNNXXXX.",
   "..XXXXXXXX..",
-  "..XXXXXXXX.X",
-  "..XXXXXXXX.X",
-  "..X..XX..X..",
+  "..XXXXXXXX..",
+  "..XX....XX..",
 }
-CAT_COLORS = { X = 14, O = 0, N = 11 }
+CAT_COLORS = { X = 14, O = 0, N = 11, I = 11 }
 
 TURTLE = {
-  ".....HH.....",
-  "....HOOH....",
+  "....HHHH....",
+  "...HOHHOH...",
+  "....HHHH....",
   "...SSSSSS...",
-  "L.SSDDDDSS.L",
+  "LLSSSSSSSSLL",
   "LLSDDSSDDSLL",
+  "..SDDSSDDS..",
   "LLSDDSSDDSLL",
-  "L.SSDDDDSS.L",
+  "LLSSSSSSSSLL",
   "...SSSSSS...",
-  "....SSSS....",
   ".....TT.....",
-  "............",
 }
-TURTLE_COLORS = { S = 12, D = 4, H = 12, L = 14, T = 4, O = 0 }
+TURTLE_COLORS = { S = 12, D = 4, H = 12, L = 14, T = 12, O = 0 }
 
 UFO = {
   "....DDDD....",
@@ -38,11 +38,11 @@ UFO = {
   "..DDDDDDDD..",
   ".BBBBBBBBBB.",
   "BBBBBBBBBBBB",
-  "BLBBLBBLBBLB",
+  "BLLBBLLBBLLB",
   ".BBBBBBBBBB.",
-  "..BB....BB..",
-  "...L....L...",
-  "............",
+  "..BBBBBBBB..",
+  "...B....B...",
+  "..LL....LL..",
   "............",
 }
 UFO_COLORS = { D = 13, B = 7, L = 11 }
@@ -51,55 +51,55 @@ MOUSE = {
   ".EE......EE.",
   "EEEE....EEEE",
   "EEEE....EEEE",
-  ".EE.MMMM.EE.",
-  "...MMMMMM...",
+  ".EEMMMMMMEE.",
+  "..MMMMMMMM..",
   "..MMOMMOMM..",
   "..MMMMMMMM..",
-  "...MMNNMM...",
-  "...MMMMMM...",
-  "....MMMM...T",
-  "..........TT",
+  "...MMNNMM.T.",
+  "...MMMMMM.T.",
+  "....MMMMTTT.",
+  "............",
 }
 MOUSE_COLORS = { M = 15, E = 11, O = 0, N = 11, T = 15 }
 
 STAR = {
   "....X....",
   "...XXX...",
-  "...XXX...",
+  "..XXXXX..",
   "XXXXXXXXX",
   ".XXXXXXX.",
   "..XXXXX..",
   "..XXXXX..",
   ".XX...XX.",
-  ".X.....X.",
+  "XX.....XX",
 }
 STAR_COLORS = { X = 14 }
 
 CHEESE = {
   "......XXX",
   ".....XXXX",
-  "....XXXXX",
-  "...XX.XXX",
-  "..XXXXXXX",
-  ".XXXX.XXX",
-  "XXXXXXXXX",
-  "XXX.XXXXX",
+  "....XXX.X",
+  "...XXXXXX",
+  "..XXX..XX",
+  ".XXXX..XX",
+  "XX..XXXXX",
+  "XX..XXXXX",
   "XXXXXXXXX",
 }
 CHEESE_COLORS = { X = 14 }
 
 APPLE = {
-  "....S.GG.",
-  "....S.GG.",
-  "..RRRRRR.",
-  ".RRRRRRRR",
+  "....S....",
+  "....SGGG.",
+  ".RRRSRRR.",
+  "RRWRRRRRR",
+  "RRWRRRRRR",
   "RRRRRRRRR",
-  "RRRRRRRRR",
-  ".RRRRRRRR",
   ".RRRRRRR.",
+  "..RRRRR..",
   "..RR.RR..",
 }
-APPLE_COLORS = { R = 10, G = 12, S = 4 }
+APPLE_COLORS = { R = 10, G = 12, S = 4, W = 15 }
 
 -- The heroes a child can choose. The first one is what
 -- they get when the word is not one of these.
