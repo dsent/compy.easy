@@ -1,6 +1,7 @@
 -- Pictures are drawn here as letters, one letter per big
 -- square. A dot is empty. Every other letter is looked up
 -- in that picture's own colour list below it.
+-- Every row in a picture must be the same length.
 
 CAT = {
   ".XX......XX.",
