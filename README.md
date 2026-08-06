@@ -23,8 +23,8 @@ Each takes exactly one string.
 
 | Line | What it does |
 | --- | --- |
-| `hero("cat")` | who the player controls — `cat`, `turtle`, `ufo`, `mouse` |
-| `food("star")` | what the player collects — `star`, `cheese`, `apple` |
+| `hero("cat")` | who the player controls — `cat`, `turtle`, `ufo`, `mouse`, `dog`, `fox`, `chicken`, `squish`, `tree`, `dino`, `tornado`, `spider` |
+| `food("star")` | what the player collects — `star`, `cheese`, `apple`, `acorn`, `lemon`, `fish`, `droplet`, `lightning` |
 | `many("20")` | how many there are, 1 to 40 |
 | `speed("fast")` | how fast the hero walks — `walk`, `slow`, `fast` |
 | `color("blue")` | the backdrop — `black`, `blue`, `red`, `magenta`, `green`, `cyan`, `yellow`, `white` |

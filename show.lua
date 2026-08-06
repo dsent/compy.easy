@@ -68,7 +68,7 @@ function drawChoices(set, names, y)
     local x = gap * i
     drawPicture(set[names[i]], x, y - 14, 4)
     gfx.setColor(Color[15])
-    gfx.printf(names[i], x - 70, y + 14, 140, "center")
+    gfx.printf(names[i], x - gap / 2, y + 14, gap, "center")
   end
 end
 
