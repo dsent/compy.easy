@@ -216,6 +216,21 @@ SPIDER = {
 }
 SPIDER_COLORS = { Y = 14, P = 21 }
 
+HAMSTER = {
+  ".XX......XX.",
+  ".XXX....XXX.",
+  ".XXXXXXXXXX.",
+  ".XXBXXXXBXX.",
+  ".XXXXEEXXXX.",
+  "..XXXEEXXX..",
+  "..XXXXXXXX..",
+  "XXXXXXXXXXXX",
+  "XXXXXXXXXXXX",
+  ".XXKKXXKKXX.",
+  ".XXKKXXKKXX.",
+}
+HAMSTER_COLORS = { X = 25, B = 9, E = 14, K = 0 }
+
 ACORN = {
   "....S....",
   "..GGGGG..",
@@ -295,9 +310,10 @@ HEROES.tree = { rows = TREE, colors = TREE_COLORS }
 HEROES.dino = { rows = DINO, colors = DINO_COLORS }
 HEROES.tornado = { rows = TORNADO, colors = TORNADO_COLORS }
 HEROES.spider = { rows = SPIDER, colors = SPIDER_COLORS }
+HEROES.hamster = { rows = HAMSTER, colors = HAMSTER_COLORS }
 HERO_NAMES = {
-  "cat", "turtle", "ufo", "mouse", "dog", "fox",
-  "chicken", "squish", "tree", "dino", "tornado", "spider",
+  "cat", "turtle", "ufo", "mouse", "dog", "fox", "chicken",
+  "squish", "tree", "dino", "tornado", "spider", "hamster",
 }
 
 -- The foods a child can choose, same rule.
