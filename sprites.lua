@@ -136,6 +136,23 @@ FOX = {
 }
 FOX_COLORS = { F = 40, G = 24, K = 8, N = 11, W = 15 }
 
+-- The first fox, kept as its own picture. Nothing a child was
+-- given is taken away when a redrawn version arrives.
+POKEFOX = {
+  "..F...F.....",
+  ".FFF.FFF....",
+  "GFFFFFFFFG..",
+  "GFKFFFFKFG..",
+  "GFFFNNFFFG..",
+  ".FGGGGGGF...",
+  ".FGGGGGGF.GG",
+  "FFGGGGGGFFGG",
+  ".FGGGGGGFFG.",
+  ".FFGFFGFF...",
+  "..GGFFGG....",
+}
+POKEFOX_COLORS = { F = 57, G = 41, K = 0, N = 11 }
+
 CHICKEN = {
   ".....R.....",
   "....KYK....",
@@ -197,6 +214,19 @@ DINO = {
 }
 DINO_COLORS = { G = 12, D = 4, K = 0 }
 
+DIPLO = {
+  ".GGG..........",
+  ".GKG..........",
+  "..GG..........",
+  "..GG..........",
+  "..GG.......GG.",
+  "..GGGGGGGGGGG.",
+  "..GGGGGGGGGG..",
+  "...GG....GG...",
+  "...DD....DD...",
+}
+DIPLO_COLORS = { G = 12, D = 4, K = 0 }
+
 TORNADO = {
   "GGGGGGGGGGGG",
   "LLLLLLLLLLLL",
@@ -211,6 +241,19 @@ TORNADO = {
   "......G.....",
 }
 TORNADO_COLORS = { G = 23, L = 7 }
+
+METEOR = {
+  ".....R..R....",
+  "...RYYRRYR...",
+  "..ROOOOOOR...",
+  ".RYOSSSSOOR..",
+  ".ROSSKSSSOR..",
+  ".RYOSSSKSOR..",
+  "..ROSSSSOOR..",
+  "...ROOOOOR...",
+  "....RRRRR....",
+}
+METEOR_COLORS = { R = 10, Y = 14, O = 24, S = 23, K = 8 }
 
 SPIDER = {
   "..W...W..",
@@ -313,6 +356,19 @@ LEMON = {
 }
 LEMON_COLORS = { Y = 14, G = 12 }
 
+-- The lemon that eats, with the eyes and teeth to prove it.
+LEMON2 = {
+  ".GG........",
+  ".GG........",
+  ".GGYYYYYYY.",
+  "..YKYYYKYYY",
+  "..YYYYYYYYY",
+  "..YYKKKKKYY",
+  "....KWKWKYY",
+  "....YYYYYY.",
+}
+LEMON2_COLORS = { Y = 14, G = 12, K = 0, W = 15 }
+
 FISH = {
   "GGGGG.GG",
   "GBGGGGGG",
@@ -356,20 +412,30 @@ HEROES.ufo = { rows = UFO, colors = UFO_COLORS }
 HEROES.mouse = { rows = MOUSE, colors = MOUSE_COLORS }
 HEROES.dog = { rows = DOG, colors = DOG_COLORS }
 HEROES.fox = { rows = FOX, colors = FOX_COLORS }
+HEROES.pokefox = { rows = POKEFOX, colors = POKEFOX_COLORS }
 HEROES.chicken = { rows = CHICKEN, colors = CHICKEN_COLORS }
 HEROES.squish = { rows = SQUISH, colors = SQUISH_COLORS }
 HEROES.tree = { rows = TREE, colors = TREE_COLORS }
 HEROES.dino = { rows = DINO, colors = DINO_COLORS }
+HEROES.diplo = { rows = DIPLO, colors = DIPLO_COLORS }
 HEROES.tornado = { rows = TORNADO, colors = TORNADO_COLORS }
+HEROES.meteor = { rows = METEOR, colors = METEOR_COLORS }
 HEROES.spider = { rows = SPIDER, colors = SPIDER_COLORS }
 HEROES.hamster = { rows = HAMSTER, colors = HAMSTER_COLORS }
 HEROES.bee = { rows = BEE, colors = BEE_COLORS }
 HEROES.rocket = { rows = ROCKET, colors = ROCKET_COLORS }
 HEROES.fish = { rows = FISH, colors = FISH_COLORS }
-HERO_NAMES = {
-  "cat", "turtle", "ufo", "mouse", "dog", "fox", "chicken", "squish",
-  "tree", "dino", "tornado", "spider", "hamster", "bee", "rocket", "fish"
-}
+HEROES.lemon = { rows = LEMON2, colors = LEMON2_COLORS }
+
+-- The menus list every picture above, in alphabetical order.
+function sortedNames(set)
+  local names = {}
+  for name in pairs(set) do names[#names + 1] = name end
+  table.sort(names)
+  return names
+end
+
+HERO_NAMES = sortedNames(HEROES)
 
 -- The foods a child can choose, same rule.
 FOODS = { }
@@ -382,7 +448,4 @@ FOODS.droplet = { rows = DROPLET, colors = DROPLET_COLORS }
 FOODS.lightning = { rows = LIGHTNING, colors = LIGHTNING_COLORS }
 FOODS.rainbow = { rows = RAINBOW, colors = RAINBOW_COLORS }
 FOODS.fish = { rows = FISH2, colors = FISH2_COLORS }
-FOOD_NAMES = {
-  "star", "cheese", "apple", "acorn", "lemon",
-  "droplet", "lightning", "rainbow", "fish",
-}
+FOOD_NAMES = sortedNames(FOODS)
