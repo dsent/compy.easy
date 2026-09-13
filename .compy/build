@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+#
+# .compy/build -- emit the shipped Compy projects from this
+# single source repo (the .compy/build convention).
+#
+# Invoked by the host build as:
+#     cd <repo> && .compy/build <out-dir>
+# with an absolute, fresh <out-dir>. It populates
+#     <out-dir>/easy/   and   <out-dir>/mygame/
+# each a valid Compy project (a direct main.lua), named
+# exactly as its manifest entry. Works relative to its own
+# location, is deterministic, and needs no network.
+#
+# mygame is the same game library with an empty main.lua: a
+# student types every line of their own game, the require
+# included.
+#
+set -eu
+
+SRC="$(cd "$(dirname "$0")/.." && pwd)"
+OUT="${1:?usage: .compy/build <out-dir> (absolute, fresh)}"
+
+emit_easy() {
+  local d="$OUT/easy"
+  mkdir -p "$d"
+  cp "$SRC"/*.lua "$SRC/LICENSE" "$SRC/README.md" "$d/"
+}
+
+emit_mygame() {
+  local d="$OUT/mygame"
+  mkdir -p "$d"
+  for f in "$SRC"/*.lua; do
+    if [ "$(basename "$f")" != main.lua ]; then cp "$f" "$d/"; fi
+  done
+  cp "$SRC/LICENSE" "$d/"
+  : > "$d/main.lua"
+}
+
+emit_easy
+emit_mygame
+echo "emitted $OUT/easy $OUT/mygame" >&2

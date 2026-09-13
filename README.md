@@ -61,6 +61,12 @@ is the answer to "how many was 20?".
 All of it is ordinary Lua. A child who opens any of these files finds
 the same language they just wrote.
 
+## mygame
+
+`.compy/build` also emits `mygame`: the same game library with an
+empty `main.lua`, for a student who types every line of their own
+game, `require("game")` included.
+
 ## Deploying
 
 From the workspace root:
