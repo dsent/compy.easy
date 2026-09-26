@@ -1,4 +1,3 @@
--- MOYA IGRA
 require("game")
 hero("cat")
 food("star")

@@ -6,7 +6,6 @@ writing three short lines gets a real game on screen.
 The child's whole `main.lua`:
 
 ```lua
--- MOYA IGRA
 require("game")
 hero("cat")
 food("star")

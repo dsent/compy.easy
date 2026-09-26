@@ -1,4 +1,4 @@
--- MOYA IGRA -- the whole game lives in this project.
+-- The whole game lives in this project.
 -- A child's main.lua asks for this file, then says which
 -- hero, which food, and how many.
 
