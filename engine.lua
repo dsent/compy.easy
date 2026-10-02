@@ -5,7 +5,6 @@
 -- a picture has rows and colors of its own, and the heroes
 -- and foods are names that point at pictures.
 
-gfx = love.graphics
 sfx = compy.audio
 
 SCREEN_W = gfx.getWidth()
@@ -55,11 +54,16 @@ end
 
 -- After the last food, any key but an arrow closes the
 -- game. The arrows may still be down from walking.
+ARROWS = {
+  up = true,
+  down = true,
+  left = true,
+  right = true
+}
+
 function love.keypressed(key)
-  local arrow = key == "up" or key == "down"
-       or key == "left"
-       or key == "right"
-  if WON and not arrow then
+  local closing = WON and not ARROWS[key]
+  if closing then
     love.event.quit()
   end
 end
@@ -88,21 +92,16 @@ function tidyName(name)
   return string.lower(name)
 end
 
--- Hands back the picture asked for. In mygame the list says
--- which picture a name points at; in easy the name has to
--- be on the list. Any other word gets the fallback picture.
+-- Hands back the picture asked for. In easy the list says
+-- true for each name on it; in mygame it says which picture
+-- a name points at. Any other word gets the fallback picture.
 function pickPicture(list, name, fallback)
   local wanted = tidyName(name)
   local points_at = list[wanted]
-  if type(points_at) == "string" then
-    return PICTURES[points_at] or PICTURES[fallback]
+  if points_at == true then
+    points_at = wanted
   end
-  for i = 1, #list do
-    if list[i] == wanted and PICTURES[wanted] then
-      return PICTURES[wanted]
-    end
-  end
-  return PICTURES[fallback]
+  return PICTURES[points_at] or PICTURES[fallback]
 end
 
 -- The rows of a picture, in either game.
@@ -165,9 +164,9 @@ CLEAR_OF_HERO = 170
 CLEAR_OF_FOOD = 56
 
 function onHeroStart(x, y)
-  local overX = math.abs(x - SCREEN_W / 2) < CLEAR_OF_HERO
-  local overY = math.abs(y - SCREEN_H / 2) < CLEAR_OF_HERO
-  return overX and overY
+  local over_x = math.abs(x - SCREEN_W / 2) < CLEAR_OF_HERO
+  local over_y = math.abs(y - SCREEN_H / 2) < CLEAR_OF_HERO
+  return over_x and over_y
 end
 
 function farEnough(x, y, item)
@@ -214,9 +213,9 @@ function findSpot(item, placed)
   return findClearOfHero(item)
 end
 
-function spawnFoods(howMany)
+function spawnFoods(how_many)
   FIELD = { }
-  for i = 1, howMany do
+  for i = 1, how_many do
     local item = { }
     item.w = pictureWidth(FOOD_PIC, FOOD_PIXEL)
     item.h = pictureHeight(FOOD_PIC, FOOD_PIXEL)
@@ -228,7 +227,7 @@ end
 
 -- Built once, on the first frame, after the child's own
 -- lines have had their say.
-function startGame()
+function makeHero()
   HERO = { }
   HERO.pic = pickPicture(HEROES, WANT.hero, "cat")
   HERO.w = pictureWidth(HERO.pic, HERO_PIXEL)
@@ -236,6 +235,10 @@ function startGame()
   HERO.x = SCREEN_W / 2
   HERO.y = SCREEN_H / 2
   HERO.speed = pickSpeed(WANT.speed)
+end
+
+function startGame()
+  makeHero()
   FOOD_PIC = pickPicture(FOODS, WANT.food, "star")
   BACKDROP = pickColor(WANT.color)
   COUNT = 0
@@ -294,12 +297,12 @@ end
 
 -- Generous on purpose: getting close counts as touching.
 function touches(item)
-  local nearX = math.abs(HERO.x - item.x)
-  local nearY = math.abs(HERO.y - item.y)
-  local reachX = (HERO.w + item.w) * 0.35
-  local reachY = (HERO.h + item.h) * 0.35
-  local closeEnough = nearX < reachX and nearY < reachY
-  return closeEnough
+  local near_x = math.abs(HERO.x - item.x)
+  local near_y = math.abs(HERO.y - item.y)
+  local reach_x = (HERO.w + item.w) * 0.35
+  local reach_y = (HERO.h + item.h) * 0.35
+  local close_enough = near_x < reach_x and near_y < reach_y
+  return close_enough
 end
 
 function eatFood()
@@ -312,7 +315,13 @@ function eatFood()
       sfx.ping()
     end
   end
-  if COUNT == #FIELD and not WON then
+  checkWin()
+end
+
+-- The last food: cheer once, and say so on the screen.
+function checkWin()
+  local just_won = COUNT == #FIELD and not WON
+  if just_won then
     WON = true
     sfx.wow()
   end

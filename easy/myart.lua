@@ -3,95 +3,89 @@
 -- letters from colors.lua. To play with one, add its name to
 -- the heroes or the foods in game.lua.
 
-PICTURES.kitty = {
-  "..YY....YY..",
-  "..YVY..YVY..",
-  "..YYYYYYYY..",
-  ".YYWYYYYWYY.",
-  "YYWWKYYKWWYY",
-  ".YYYYRRYYYY.",
-  "..YYYYYYYY..",
-  "..YYYYYYYY..",
-  "..YYYYYYYY..",
-  "..YYY..YYY..",
-  "..YVY..YVY..",
-  "..VVV..VVV.."
-}
+PICTURES.kitty = { }
+PICTURES.kitty[1] = "..YY....YY.."
+PICTURES.kitty[2] = "..YVY..YVY.."
+PICTURES.kitty[3] = "..YYYYYYYY.."
+PICTURES.kitty[4] = ".YYWYYYYWYY."
+PICTURES.kitty[5] = "YYWWKYYKWWYY"
+PICTURES.kitty[6] = ".YYYYRRYYYY."
+PICTURES.kitty[7] = "..YYYYYYYY.."
+PICTURES.kitty[8] = "..YYYYYYYY.."
+PICTURES.kitty[9] = "..YYYYYYYY.."
+PICTURES.kitty[10] = "..YYY..YYY.."
+PICTURES.kitty[11] = "..YVY..YVY.."
+PICTURES.kitty[12] = "..VVV..VVV.."
 
-PICTURES.hen = {
-  "....R....",
-  "....R....",
-  "....W....",
-  "...KYK...",
-  "..WWYWW..",
-  "...WYW...",
-  "...WRW...",
-  "...WRW...",
-  "..YWWWY..",
-  "YYWWWWWYY",
-  "YWWWWWWWY",
-  "YYWWYWWYY",
-  "..YYYYY..",
-  "...YYY...",
-  "...R.R...",
-  "..RR.RR.."
-}
+PICTURES.hen = { }
+PICTURES.hen[1] = "....R...."
+PICTURES.hen[2] = "....R...."
+PICTURES.hen[3] = "....W...."
+PICTURES.hen[4] = "...KYK..."
+PICTURES.hen[5] = "..WWYWW.."
+PICTURES.hen[6] = "...WYW..."
+PICTURES.hen[7] = "...WRW..."
+PICTURES.hen[8] = "...WRW..."
+PICTURES.hen[9] = "..YWWWY.."
+PICTURES.hen[10] = "YYWWWWWYY"
+PICTURES.hen[11] = "YWWWWWWWY"
+PICTURES.hen[12] = "YYWWYWWYY"
+PICTURES.hen[13] = "..YYYYY.."
+PICTURES.hen[14] = "...YYY..."
+PICTURES.hen[15] = "...R.R..."
+PICTURES.hen[16] = "..RR.RR.."
 
-PICTURES.house = {
-  ".....RRRRRR.....",
-  "....RRRRRRRR....",
-  "...RRRRRRRRRR...",
-  "..RRRRRRRRRRRR..",
-  ".RRRRRRRRRRRRRR.",
-  "RRRRRRRRRRRRRRRR",
-  "KWWWWWWWWWWWWWWK",
-  "KWWWWWWWWWWYYYWK",
-  "KWWWWWWWWWWYYYWK",
-  "KWWWWWRRRRWYYYWK",
-  "KWWWWWRRRRWWWWWK",
-  "KWWWWWRYRRWWWWWK",
-  "KWWWWWRRRRWWWWWK",
-  "KWWWWWRRRRWWWWWK"
-}
+PICTURES.house = { }
+PICTURES.house[1] = ".....RRRRRR....."
+PICTURES.house[2] = "....RRRRRRRR...."
+PICTURES.house[3] = "...RRRRRRRRRR..."
+PICTURES.house[4] = "..RRRRRRRRRRRR.."
+PICTURES.house[5] = ".RRRRRRRRRRRRRR."
+PICTURES.house[6] = "RRRRRRRRRRRRRRRR"
+PICTURES.house[7] = "KWWWWWWWWWWWWWWK"
+PICTURES.house[8] = "KWWWWWWWWWWYYYWK"
+PICTURES.house[9] = "KWWWWWWWWWWYYYWK"
+PICTURES.house[10] = "KWWWWWRRRRWYYYWK"
+PICTURES.house[11] = "KWWWWWRRRRWWWWWK"
+PICTURES.house[12] = "KWWWWWRYRRWWWWWK"
+PICTURES.house[13] = "KWWWWWRRRRWWWWWK"
+PICTURES.house[14] = "KWWWWWRRRRWWWWWK"
 
-PICTURES.wizard = {
-  "......C...",
-  "......CC..",
-  "....BBCCC.",
-  "....BBCCC.",
-  "....BBCCC.",
-  "...BWWBC..",
-  "...YVVY...",
-  "..YK..KYK.",
-  "...Y..Y...",
-  ".VV....VV.",
-  "VVV....VVV",
-  "..........",
-  "........K."
-}
+PICTURES.wizard = { }
+PICTURES.wizard[1] = "......C..."
+PICTURES.wizard[2] = "......CC.."
+PICTURES.wizard[3] = "....BBCCC."
+PICTURES.wizard[4] = "....BBCCC."
+PICTURES.wizard[5] = "....BBCCC."
+PICTURES.wizard[6] = "...BWWBC.."
+PICTURES.wizard[7] = "...YVVY..."
+PICTURES.wizard[8] = "..YK..KYK."
+PICTURES.wizard[9] = "...Y..Y..."
+PICTURES.wizard[10] = ".VV....VV."
+PICTURES.wizard[11] = "VVV....VVV"
+PICTURES.wizard[12] = ".........."
+PICTURES.wizard[13] = "........K."
 
-PICTURES.twins = {
-  "...........G",
-  "G..........G",
-  "......W.V...",
-  ".C.......V..",
-  ".VVV..W..CCC",
-  ".CYV.....C..",
-  ".YGV...CCCCC",
-  ".YYY...WYWCY",
-  "........Y.CY",
-  "........YYYY"
-}
+PICTURES.twins = { }
+PICTURES.twins[1] = "...........G"
+PICTURES.twins[2] = "G..........G"
+PICTURES.twins[3] = "......W.V..."
+PICTURES.twins[4] = ".C.......V.."
+PICTURES.twins[5] = ".VVV..W..CCC"
+PICTURES.twins[6] = ".CYV.....C.."
+PICTURES.twins[7] = ".YGV...CCCCC"
+PICTURES.twins[8] = ".YYY...WYWCY"
+PICTURES.twins[9] = "........Y.CY"
+PICTURES.twins[10] = "........YYYY"
 
-PICTURES.frame = {
-  "RRRRRRRRR",
-  "R.......R",
-  "R.......R",
-  "R.......R",
-  "R.......R",
-  "R.......R",
-  "R.......K",
-  "R.......K",
-  "R.......K",
-  "RRRRVVRKV"
-}
+PICTURES.frame = { }
+PICTURES.frame[1] = "RRRRRRRRR"
+PICTURES.frame[2] = "R.......R"
+PICTURES.frame[3] = "R.......R"
+PICTURES.frame[4] = "R.......R"
+PICTURES.frame[5] = "R.......R"
+PICTURES.frame[6] = "R.......R"
+PICTURES.frame[7] = "R.......K"
+PICTURES.frame[8] = "R.......K"
+PICTURES.frame[9] = "R.......K"
+PICTURES.frame[10] = "RRRRVVRKV"

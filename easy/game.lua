@@ -7,49 +7,47 @@ require("sprites")
 require("myart")
 
 -- The pictures you can play as: hero("cat") in main.lua.
-HEROES = {
-  "bee",
-  "cat",
-  "chicken",
-  "dino",
-  "diplo",
-  "dog",
-  "fish",
-  "fox",
-  "hamster",
-  "lemon",
-  "meteor",
-  "mouse",
-  "pokefox",
-  "rocket",
-  "smallfish",
-  "spider",
-  "squish",
-  "tornado",
-  "tree",
-  "turtle",
-  "ufo",
-  -- your own pictures, from myart.lua
-  "frame",
-  "hen",
-  "house",
-  "kitty",
-  "twins",
-  "wizard"
-}
+HEROES = { }
+HEROES.bee = true
+HEROES.cat = true
+HEROES.chicken = true
+HEROES.dino = true
+HEROES.diplo = true
+HEROES.dog = true
+HEROES.fish = true
+HEROES.fox = true
+HEROES.hamster = true
+HEROES.lemon = true
+HEROES.meteor = true
+HEROES.mouse = true
+HEROES.pokefox = true
+HEROES.rocket = true
+HEROES.smallfish = true
+HEROES.spider = true
+HEROES.squish = true
+HEROES.tornado = true
+HEROES.tree = true
+HEROES.turtle = true
+HEROES.ufo = true
+-- your own pictures, from myart.lua
+HEROES.frame = true
+HEROES.hen = true
+HEROES.house = true
+HEROES.kitty = true
+HEROES.twins = true
+HEROES.wizard = true
 
 -- The pictures you can collect: food("star") in main.lua.
-FOODS = {
-  "acorn",
-  "apple",
-  "cheese",
-  "droplet",
-  "fish",
-  "lemon",
-  "lightning",
-  "rainbow",
-  "star"
-}
+FOODS = { }
+FOODS.acorn = true
+FOODS.apple = true
+FOODS.cheese = true
+FOODS.droplet = true
+FOODS.fish = true
+FOODS.lemon = true
+FOODS.lightning = true
+FOODS.rainbow = true
+FOODS.star = true
 
 -- The most food one game can have. many(100) still gives
 -- only this many.

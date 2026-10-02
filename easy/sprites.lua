@@ -5,363 +5,335 @@
 
 PICTURES = { }
 
-PICTURES.cat = {
-  "..YY....YY..",
-  "..YPY..YPY..",
-  "..YYYYYYYY..",
-  ".YYWYYYYWYY.",
-  "YYWWKYYKWWYY",
-  ".YYYYPPYYYY.",
-  "..YYYYYYYY..",
-  "..YYYYYYYY..",
-  "..YYYYYYYY..",
-  "..YYYYYYYY..",
-  "..YYY..YYY..",
-  "..YYY..YYY.."
-}
+PICTURES.cat = { }
+PICTURES.cat[1] = "..YY....YY.."
+PICTURES.cat[2] = "..YPY..YPY.."
+PICTURES.cat[3] = "..YYYYYYYY.."
+PICTURES.cat[4] = ".YYWYYYYWYY."
+PICTURES.cat[5] = "YYWWKYYKWWYY"
+PICTURES.cat[6] = ".YYYYPPYYYY."
+PICTURES.cat[7] = "..YYYYYYYY.."
+PICTURES.cat[8] = "..YYYYYYYY.."
+PICTURES.cat[9] = "..YYYYYYYY.."
+PICTURES.cat[10] = "..YYYYYYYY.."
+PICTURES.cat[11] = "..YYY..YYY.."
+PICTURES.cat[12] = "..YYY..YYY.."
 
-PICTURES.turtle = {
-  ".....GG.....",
-  "GGG.GGGG.GGG",
-  "GGGOKGGKOGGG",
-  ".GGGNNNNGGG.",
-  "..GNNOONNG..",
-  "..NNOGGONN..",
-  "..NOGNNGON..",
-  "..NOGNNGON..",
-  "..GNOGGONG..",
-  ".GGNNOONNGG.",
-  "GGG.NNNN.GGG",
-  "GGG..GG..GGG"
-}
+PICTURES.turtle = { }
+PICTURES.turtle[1] = ".....GG....."
+PICTURES.turtle[2] = "GGG.GGGG.GGG"
+PICTURES.turtle[3] = "GGGOKGGKOGGG"
+PICTURES.turtle[4] = ".GGGNNNNGGG."
+PICTURES.turtle[5] = "..GNNOONNG.."
+PICTURES.turtle[6] = "..NNOGGONN.."
+PICTURES.turtle[7] = "..NOGNNGON.."
+PICTURES.turtle[8] = "..NOGNNGON.."
+PICTURES.turtle[9] = "..GNOGGONG.."
+PICTURES.turtle[10] = ".GGNNOONNGG."
+PICTURES.turtle[11] = "GGG.NNNN.GGG"
+PICTURES.turtle[12] = "GGG..GG..GGG"
 
-PICTURES.ufo = {
-  "....CCCC....",
-  "...CCCCCC...",
-  "..CCCCCCCC..",
-  ".AAAAAAAAAA.",
-  "AAAAAAAAAAAA",
-  "APPAAPPAAPPA",
-  ".AAAAAAAAAA.",
-  "..AAAAAAAA..",
-  "...A....A...",
-  "..PP....PP..",
-  "............"
-}
+PICTURES.ufo = { }
+PICTURES.ufo[1] = "....CCCC...."
+PICTURES.ufo[2] = "...CCCCCC..."
+PICTURES.ufo[3] = "..CCCCCCCC.."
+PICTURES.ufo[4] = ".AAAAAAAAAA."
+PICTURES.ufo[5] = "AAAAAAAAAAAA"
+PICTURES.ufo[6] = "APPAAPPAAPPA"
+PICTURES.ufo[7] = ".AAAAAAAAAA."
+PICTURES.ufo[8] = "..AAAAAAAA.."
+PICTURES.ufo[9] = "...A....A..."
+PICTURES.ufo[10] = "..PP....PP.."
+PICTURES.ufo[11] = "............"
 
-PICTURES.mouse = {
-  ".WWW....WWW.",
-  "WPPPW..WPPPW",
-  "WWPPWWWWPPWW",
-  ".WWAAWWAAWW.",
-  "..AAKAAKAA..",
-  "...AAPPAA...",
-  "...WAAAAW.WW",
-  "..WWWAAWWW.W",
-  "..WWWAAWWW.W",
-  "..WWWAAWWWWW",
-  "...WW..WW...",
-  "....W..W...."
-}
+PICTURES.mouse = { }
+PICTURES.mouse[1] = ".WWW....WWW."
+PICTURES.mouse[2] = "WPPPW..WPPPW"
+PICTURES.mouse[3] = "WWPPWWWWPPWW"
+PICTURES.mouse[4] = ".WWAAWWAAWW."
+PICTURES.mouse[5] = "..AAKAAKAA.."
+PICTURES.mouse[6] = "...AAPPAA..."
+PICTURES.mouse[7] = "...WAAAAW.WW"
+PICTURES.mouse[8] = "..WWWAAWWW.W"
+PICTURES.mouse[9] = "..WWWAAWWW.W"
+PICTURES.mouse[10] = "..WWWAAWWWWW"
+PICTURES.mouse[11] = "...WW..WW..."
+PICTURES.mouse[12] = "....W..W...."
 
-PICTURES.star = {
-  "....Y....",
-  "...YYY...",
-  "YY.YWY.YY",
-  "YWYYWYYWY",
-  ".YWYYYWY.",
-  "..YYYYY..",
-  ".YWYYYWY.",
-  "YWYY.YYWY",
-  "YY.....YY"
-}
+PICTURES.star = { }
+PICTURES.star[1] = "....Y...."
+PICTURES.star[2] = "...YYY..."
+PICTURES.star[3] = "YY.YWY.YY"
+PICTURES.star[4] = "YWYYWYYWY"
+PICTURES.star[5] = ".YWYYYWY."
+PICTURES.star[6] = "..YYYYY.."
+PICTURES.star[7] = ".YWYYYWY."
+PICTURES.star[8] = "YWYY.YYWY"
+PICTURES.star[9] = "YY.....YY"
 
-PICTURES.cheese = {
-  ".....OOOOO",
-  "...OOOOYYY",
-  ".OOOYKYYYY",
-  "OOYOYYYKYK",
-  "YYYYYYYYYY",
-  "YYYYKYYYK.",
-  "YKYYYYYYY.",
-  "YYYKKYYY..",
-  "YYYKKYY...",
-  "YYYYYY...."
-}
+PICTURES.cheese = { }
+PICTURES.cheese[1] = ".....OOOOO"
+PICTURES.cheese[2] = "...OOOOYYY"
+PICTURES.cheese[3] = ".OOOYKYYYY"
+PICTURES.cheese[4] = "OOYOYYYKYK"
+PICTURES.cheese[5] = "YYYYYYYYYY"
+PICTURES.cheese[6] = "YYYYKYYYK."
+PICTURES.cheese[7] = "YKYYYYYYY."
+PICTURES.cheese[8] = "YYYKKYYY.."
+PICTURES.cheese[9] = "YYYKKYY..."
+PICTURES.cheese[10] = "YYYYYY...."
 
-PICTURES.apple = {
-  "....N.GG..",
-  ".RR.NGGRR.",
-  "RRRRNGRRRR",
-  "RRRRRRRRRR",
-  "RRWRRRRRRR",
-  "RRWRRRRRRR",
-  "RRRRRRRRRR",
-  ".RRRRRRRR.",
-  "..RRRRRR..",
-  "...RRRR..."
-}
+PICTURES.apple = { }
+PICTURES.apple[1] = "....N.GG.."
+PICTURES.apple[2] = ".RR.NGGRR."
+PICTURES.apple[3] = "RRRRNGRRRR"
+PICTURES.apple[4] = "RRRRRRRRRR"
+PICTURES.apple[5] = "RRWRRRRRRR"
+PICTURES.apple[6] = "RRWRRRRRRR"
+PICTURES.apple[7] = "RRRRRRRRRR"
+PICTURES.apple[8] = ".RRRRRRRR."
+PICTURES.apple[9] = "..RRRRRR.."
+PICTURES.apple[10] = "...RRRR..."
 
-PICTURES.dog = {
-  "..ON...NO..",
-  "...NONON...",
-  "...OKNKO...",
-  "...NOKON...",
-  "...ONPNO.OO",
-  "...ONNNO.O.",
-  "...ONONO.N.",
-  "...OO.OONN.",
-  "..OOO.OOO.."
-}
+PICTURES.dog = { }
+PICTURES.dog[1] = "..ON...NO.."
+PICTURES.dog[2] = "...NONON..."
+PICTURES.dog[3] = "...OKNKO..."
+PICTURES.dog[4] = "...NOKON..."
+PICTURES.dog[5] = "...ONPNO.OO"
+PICTURES.dog[6] = "...ONNNO.O."
+PICTURES.dog[7] = "...ONONO.N."
+PICTURES.dog[8] = "...OO.OONN."
+PICTURES.dog[9] = "..OOO.OOO.."
 
-PICTURES.fox = {
-  "..O......O....",
-  "..OO....OO....",
-  "..OYO..OYO....",
-  ".YOOWOOWOOY...",
-  "YOOWKOOKWOOY..",
-  ".YOOWPPWOOY...",
-  "..OYOOOOYO....",
-  "..OYYYYYYO.OYY",
-  "..OOYYYYOO.OOY",
-  "..OOOYYOOOOOOY",
-  "..OYO..OYOOOO.",
-  "..YYY..YYYOOO."
-}
+PICTURES.fox = { }
+PICTURES.fox[1] = "..O......O...."
+PICTURES.fox[2] = "..OO....OO...."
+PICTURES.fox[3] = "..OYO..OYO...."
+PICTURES.fox[4] = ".YOOWOOWOOY..."
+PICTURES.fox[5] = "YOOWKOOKWOOY.."
+PICTURES.fox[6] = ".YOOWPPWOOY..."
+PICTURES.fox[7] = "..OYOOOOYO...."
+PICTURES.fox[8] = "..OYYYYYYO.OYY"
+PICTURES.fox[9] = "..OOYYYYOO.OOY"
+PICTURES.fox[10] = "..OOOYYOOOOOOY"
+PICTURES.fox[11] = "..OYO..OYOOOO."
+PICTURES.fox[12] = "..YYY..YYYOOO."
 
 -- The first fox, kept as its own picture. Nothing a child was
 -- given is taken away when a redrawn version arrives.
-PICTURES.pokefox = {
-  "..O...O.....",
-  ".OOO.OOO....",
-  "YOOOOOOOOY..",
-  "YOKOOOOKOY..",
-  "YOOOPPOOOY..",
-  ".OYYYYYYO...",
-  ".OYYYYYYO.YY",
-  "OOYYYYYYOOYY",
-  ".OYYYYYYOOY.",
-  ".OOYOOYOO...",
-  "..YYOOYY...."
-}
+PICTURES.pokefox = { }
+PICTURES.pokefox[1] = "..O...O....."
+PICTURES.pokefox[2] = ".OOO.OOO...."
+PICTURES.pokefox[3] = "YOOOOOOOOY.."
+PICTURES.pokefox[4] = "YOKOOOOKOY.."
+PICTURES.pokefox[5] = "YOOOPPOOOY.."
+PICTURES.pokefox[6] = ".OYYYYYYO..."
+PICTURES.pokefox[7] = ".OYYYYYYO.YY"
+PICTURES.pokefox[8] = "OOYYYYYYOOYY"
+PICTURES.pokefox[9] = ".OYYYYYYOOY."
+PICTURES.pokefox[10] = ".OOYOOYOO..."
+PICTURES.pokefox[11] = "..YYOOYY...."
 
-PICTURES.chicken = {
-  ".....R.....",
-  "....KWK....",
-  "....YYY....",
-  "....WYW....",
-  "....WRW....",
-  "....WRW....",
-  "...YWWWY...",
-  "..YWWWWWY..",
-  "..YWWWWWY..",
-  "..YWYYYWY..",
-  "...YY.YY...",
-  "....O.O....",
-  "...OO.OO..."
-}
+PICTURES.chicken = { }
+PICTURES.chicken[1] = ".....R....."
+PICTURES.chicken[2] = "....KWK...."
+PICTURES.chicken[3] = "....YYY...."
+PICTURES.chicken[4] = "....WYW...."
+PICTURES.chicken[5] = "....WRW...."
+PICTURES.chicken[6] = "....WRW...."
+PICTURES.chicken[7] = "...YWWWY..."
+PICTURES.chicken[8] = "..YWWWWWY.."
+PICTURES.chicken[9] = "..YWWWWWY.."
+PICTURES.chicken[10] = "..YWYYYWY.."
+PICTURES.chicken[11] = "...YY.YY..."
+PICTURES.chicken[12] = "....O.O...."
+PICTURES.chicken[13] = "...OO.OO..."
 
-PICTURES.squish = {
-  "..A..",
-  "..A..",
-  "..A..",
-  ".VVV.",
-  "VKVKV",
-  "VVPVV",
-  "VPPPV",
-  "VVPVV",
-  "VPPPV",
-  ".VVV."
-}
+PICTURES.squish = { }
+PICTURES.squish[1] = "..A.."
+PICTURES.squish[2] = "..A.."
+PICTURES.squish[3] = "..A.."
+PICTURES.squish[4] = ".VVV."
+PICTURES.squish[5] = "VKVKV"
+PICTURES.squish[6] = "VVPVV"
+PICTURES.squish[7] = "VPPPV"
+PICTURES.squish[8] = "VVPVV"
+PICTURES.squish[9] = "VPPPV"
+PICTURES.squish[10] = ".VVV."
 
-PICTURES.tree = {
-  ".....GG.....",
-  "....GGGG....",
-  "...GGGGGG...",
-  ".GGGGGGGGGG.",
-  ".GGGGGGGGGG.",
-  "...GGGGGG...",
-  ".....NN.....",
-  ".....NN.....",
-  ".....NN.....",
-  ".....NN.....",
-  "............"
-}
+PICTURES.tree = { }
+PICTURES.tree[1] = ".....GG....."
+PICTURES.tree[2] = "....GGGG...."
+PICTURES.tree[3] = "...GGGGGG..."
+PICTURES.tree[4] = ".GGGGGGGGGG."
+PICTURES.tree[5] = ".GGGGGGGGGG."
+PICTURES.tree[6] = "...GGGGGG..."
+PICTURES.tree[7] = ".....NN....."
+PICTURES.tree[8] = ".....NN....."
+PICTURES.tree[9] = ".....NN....."
+PICTURES.tree[10] = ".....NN....."
+PICTURES.tree[11] = "............"
 
-PICTURES.dino = {
-  ".......GGG..",
-  "......GGGGG.",
-  "......GKGGG.",
-  "G.....GGGGG.",
-  "GG...GGGGG..",
-  "GGGGGGGGG...",
-  "GGGGGGGGGG..",
-  "GGGGGGGGGG..",
-  ".GGGGGGGG...",
-  "..GG..GG....",
-  "..GG..GG...."
-}
+PICTURES.dino = { }
+PICTURES.dino[1] = ".......GGG.."
+PICTURES.dino[2] = "......GGGGG."
+PICTURES.dino[3] = "......GKGGG."
+PICTURES.dino[4] = "G.....GGGGG."
+PICTURES.dino[5] = "GG...GGGGG.."
+PICTURES.dino[6] = "GGGGGGGGG..."
+PICTURES.dino[7] = "GGGGGGGGGG.."
+PICTURES.dino[8] = "GGGGGGGGGG.."
+PICTURES.dino[9] = ".GGGGGGGG..."
+PICTURES.dino[10] = "..GG..GG...."
+PICTURES.dino[11] = "..GG..GG...."
 
-PICTURES.diplo = {
-  ".GGG..........",
-  ".GKG..........",
-  "..GG..........",
-  "..GG..........",
-  "..GG.......GG.",
-  "..GGGGGGGGGGG.",
-  "..GGGGGGGGGG..",
-  "...GG....GG...",
-  "...NN....NN..."
-}
+PICTURES.diplo = { }
+PICTURES.diplo[1] = ".GGG.........."
+PICTURES.diplo[2] = ".GKG.........."
+PICTURES.diplo[3] = "..GG.........."
+PICTURES.diplo[4] = "..GG.........."
+PICTURES.diplo[5] = "..GG.......GG."
+PICTURES.diplo[6] = "..GGGGGGGGGGG."
+PICTURES.diplo[7] = "..GGGGGGGGGG.."
+PICTURES.diplo[8] = "...GG....GG..."
+PICTURES.diplo[9] = "...NN....NN..."
 
-PICTURES.tornado = {
-  "AAAAAAAAAAAA",
-  "WWWWWWWWWWWW",
-  ".AAAAAAAAAA.",
-  "..WWWWWWWW..",
-  "...AAAAAA...",
-  "....WWWW....",
-  "....AAAA....",
-  ".....WW.....",
-  ".....AA.....",
-  ".....WW.....",
-  "......A....."
-}
+PICTURES.tornado = { }
+PICTURES.tornado[1] = "AAAAAAAAAAAA"
+PICTURES.tornado[2] = "WWWWWWWWWWWW"
+PICTURES.tornado[3] = ".AAAAAAAAAA."
+PICTURES.tornado[4] = "..WWWWWWWW.."
+PICTURES.tornado[5] = "...AAAAAA..."
+PICTURES.tornado[6] = "....WWWW...."
+PICTURES.tornado[7] = "....AAAA...."
+PICTURES.tornado[8] = ".....WW....."
+PICTURES.tornado[9] = ".....AA....."
+PICTURES.tornado[10] = ".....WW....."
+PICTURES.tornado[11] = "......A....."
 
-PICTURES.meteor = {
-  ".....R..R....",
-  "...RYYRRYR...",
-  "..ROOOOOOR...",
-  ".RYOAAAAOOR..",
-  ".ROAAKAAAOR..",
-  ".RYOAAAKAOR..",
-  "..ROAAAAOOR..",
-  "...ROOOOOR...",
-  "....RRRRR...."
-}
+PICTURES.meteor = { }
+PICTURES.meteor[1] = ".....R..R...."
+PICTURES.meteor[2] = "...RYYRRYR..."
+PICTURES.meteor[3] = "..ROOOOOOR..."
+PICTURES.meteor[4] = ".RYOAAAAOOR.."
+PICTURES.meteor[5] = ".ROAAKAAAOR.."
+PICTURES.meteor[6] = ".RYOAAAKAOR.."
+PICTURES.meteor[7] = "..ROAAAAOOR.."
+PICTURES.meteor[8] = "...ROOOOOR..."
+PICTURES.meteor[9] = "....RRRRR...."
 
-PICTURES.spider = {
-  "..W...W..",
-  "...VVV...",
-  "YYYVVVYYY",
-  "Y..VVV..Y",
-  "...VVV...",
-  "YYYVVVYYY",
-  "Y.......Y"
-}
+PICTURES.spider = { }
+PICTURES.spider[1] = "..W...W.."
+PICTURES.spider[2] = "...VVV..."
+PICTURES.spider[3] = "YYYVVVYYY"
+PICTURES.spider[4] = "Y..VVV..Y"
+PICTURES.spider[5] = "...VVV..."
+PICTURES.spider[6] = "YYYVVVYYY"
+PICTURES.spider[7] = "Y.......Y"
 
-PICTURES.hamster = {
-  ".N....N.",
-  ".NNNNNN.",
-  ".NBNNBN.",
-  ".NNYYNN.",
-  "..NNNN..",
-  ".NNNNNN.",
-  "NNKNNKNN",
-  "NNKNNKNN",
-  ".NNNNNN."
-}
+PICTURES.hamster = { }
+PICTURES.hamster[1] = ".N....N."
+PICTURES.hamster[2] = ".NNNNNN."
+PICTURES.hamster[3] = ".NBNNBN."
+PICTURES.hamster[4] = ".NNYYNN."
+PICTURES.hamster[5] = "..NNNN.."
+PICTURES.hamster[6] = ".NNNNNN."
+PICTURES.hamster[7] = "NNKNNKNN"
+PICTURES.hamster[8] = "NNKNNKNN"
+PICTURES.hamster[9] = ".NNNNNN."
 
-PICTURES.rocket = {
-  ".....BB.....",
-  "....CCCC....",
-  "....BBBB....",
-  "...CCCCCC...",
-  "..BBAAAABB..",
-  ".BBBAPPABBB.",
-  "BBB.WPPA.BBB",
-  "B..AWAAAA..B",
-  "..AAAAAAAA..",
-  ".AAAAAAAAAA.",
-  "...WW..WW...",
-  "...VP..PV..."
-}
+PICTURES.rocket = { }
+PICTURES.rocket[1] = ".....BB....."
+PICTURES.rocket[2] = "....CCCC...."
+PICTURES.rocket[3] = "....BBBB...."
+PICTURES.rocket[4] = "...CCCCCC..."
+PICTURES.rocket[5] = "..BBAAAABB.."
+PICTURES.rocket[6] = ".BBBAPPABBB."
+PICTURES.rocket[7] = "BBB.WPPA.BBB"
+PICTURES.rocket[8] = "B..AWAAAA..B"
+PICTURES.rocket[9] = "..AAAAAAAA.."
+PICTURES.rocket[10] = ".AAAAAAAAAA."
+PICTURES.rocket[11] = "...WW..WW..."
+PICTURES.rocket[12] = "...VP..PV..."
 
-PICTURES.fish = {
-  "...BCC....",
-  "....BCC...",
-  "BCC..BCC..",
-  ".BC.CCWYC.",
-  "..CCCWYKYB",
-  "..CCCCWYCB",
-  ".BC.CCCCC.",
-  "BCC..BCC..",
-  "....BCC...",
-  "...BCC...."
-}
+PICTURES.fish = { }
+PICTURES.fish[1] = "...BCC...."
+PICTURES.fish[2] = "....BCC..."
+PICTURES.fish[3] = "BCC..BCC.."
+PICTURES.fish[4] = ".BC.CCWYC."
+PICTURES.fish[5] = "..CCCWYKYB"
+PICTURES.fish[6] = "..CCCCWYCB"
+PICTURES.fish[7] = ".BC.CCCCC."
+PICTURES.fish[8] = "BCC..BCC.."
+PICTURES.fish[9] = "....BCC..."
+PICTURES.fish[10] = "...BCC...."
 
-PICTURES.bee = {
-  "..A..A..",
-  "..AAAA..",
-  "CCYYYYCC",
-  "CCAAAACC",
-  ".CYYYYC.",
-  "..AAAA..",
-  "...AA..."
-}
+PICTURES.bee = { }
+PICTURES.bee[1] = "..A..A.."
+PICTURES.bee[2] = "..AAAA.."
+PICTURES.bee[3] = "CCYYYYCC"
+PICTURES.bee[4] = "CCAAAACC"
+PICTURES.bee[5] = ".CYYYYC."
+PICTURES.bee[6] = "..AAAA.."
+PICTURES.bee[7] = "...AA..."
 
-PICTURES.rainbow = {
-  "....PPPPP....",
-  "...PCCCCCP...",
-  "..PCGGGGGCP..",
-  ".PCGYYYYYGCP.",
-  "PCGYRRRRRYGCP",
-  "PCGYR...RYGCP",
-  "PCGYR...RYGCP"
-}
-PICTURES.acorn = {
-  "...N...",
-  "...N...",
-  "..NNN..",
-  ".NNNNN.",
-  "NNNNNNN",
-  ".OOOOO.",
-  ".OOOOO.",
-  ".OOOOO.",
-  "..OOO..",
-  "...O..."
-}
+PICTURES.rainbow = { }
+PICTURES.rainbow[1] = "....PPPPP...."
+PICTURES.rainbow[2] = "...PCCCCCP..."
+PICTURES.rainbow[3] = "..PCGGGGGCP.."
+PICTURES.rainbow[4] = ".PCGYYYYYGCP."
+PICTURES.rainbow[5] = "PCGYRRRRRYGCP"
+PICTURES.rainbow[6] = "PCGYR...RYGCP"
+PICTURES.rainbow[7] = "PCGYR...RYGCP"
+PICTURES.acorn = { }
+PICTURES.acorn[1] = "...N..."
+PICTURES.acorn[2] = "...N..."
+PICTURES.acorn[3] = "..NNN.."
+PICTURES.acorn[4] = ".NNNNN."
+PICTURES.acorn[5] = "NNNNNNN"
+PICTURES.acorn[6] = ".OOOOO."
+PICTURES.acorn[7] = ".OOOOO."
+PICTURES.acorn[8] = ".OOOOO."
+PICTURES.acorn[9] = "..OOO.."
+PICTURES.acorn[10] = "...O..."
 
 -- The lemon that eats, with the eyes and teeth to prove it.
-PICTURES.lemon = {
-  ".GG........",
-  ".GG........",
-  ".GGYYYYYYY.",
-  "..YKYYYKYYY",
-  "..YYYYYYYYY",
-  "..YYKKKKKYY",
-  "....KWKWKYY",
-  "....YYYYYY."
-}
+PICTURES.lemon = { }
+PICTURES.lemon[1] = ".GG........"
+PICTURES.lemon[2] = ".GG........"
+PICTURES.lemon[3] = ".GGYYYYYYY."
+PICTURES.lemon[4] = "..YKYYYKYYY"
+PICTURES.lemon[5] = "..YYYYYYYYY"
+PICTURES.lemon[6] = "..YYKKKKKYY"
+PICTURES.lemon[7] = "....KWKWKYY"
+PICTURES.lemon[8] = "....YYYYYY."
 
-PICTURES.smallfish = {
-  "AAAAA.AA",
-  "AKAAAAAA",
-  "AAPKAAAA",
-  "KKKKAAAA",
-  "AAAAA.AA"
-}
+PICTURES.smallfish = { }
+PICTURES.smallfish[1] = "AAAAA.AA"
+PICTURES.smallfish[2] = "AKAAAAAA"
+PICTURES.smallfish[3] = "AAPKAAAA"
+PICTURES.smallfish[4] = "KKKKAAAA"
+PICTURES.smallfish[5] = "AAAAA.AA"
 
-PICTURES.droplet = {
-  "....B....",
-  "...BCB...",
-  "...BCB...",
-  "..BCCCB..",
-  ".BCCCCCB.",
-  ".BCCWCCB.",
-  ".BCCCCCB.",
-  "..BCCCB..",
-  "...BBB..."
-}
+PICTURES.droplet = { }
+PICTURES.droplet[1] = "....B...."
+PICTURES.droplet[2] = "...BCB..."
+PICTURES.droplet[3] = "...BCB..."
+PICTURES.droplet[4] = "..BCCCB.."
+PICTURES.droplet[5] = ".BCCCCCB."
+PICTURES.droplet[6] = ".BCCWCCB."
+PICTURES.droplet[7] = ".BCCCCCB."
+PICTURES.droplet[8] = "..BCCCB.."
+PICTURES.droplet[9] = "...BBB..."
 
-PICTURES.lightning = {
-  "....YYY..",
-  "...YYY...",
-  "..YYY....",
-  ".YYYYYY..",
-  "...YYYY..",
-  "....YYY..",
-  "...YYY...",
-  "..YYY....",
-  ".YY......"
-}
+PICTURES.lightning = { }
+PICTURES.lightning[1] = "....YYY.."
+PICTURES.lightning[2] = "...YYY..."
+PICTURES.lightning[3] = "..YYY...."
+PICTURES.lightning[4] = ".YYYYYY.."
+PICTURES.lightning[5] = "...YYYY.."
+PICTURES.lightning[6] = "....YYY.."
+PICTURES.lightning[7] = "...YYY..."
+PICTURES.lightning[8] = "..YYY...."
+PICTURES.lightning[9] = ".YY......"
