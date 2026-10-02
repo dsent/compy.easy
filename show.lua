@@ -1,6 +1,7 @@
 -- Putting the game on the screen.
 
 COUNT_FONT = gfx.newFont(56)
+WIN_FONT = gfx.newFont(96)
 NAME_FONT = gfx.newFont(18)
 
 -- Where the picture being drawn right now sits, so the
@@ -8,7 +9,7 @@ NAME_FONT = gfx.newFont(18)
 SPOT = { }
 
 function drawPictureCell(letter, c, y)
-  local shade = SPOT.colors[letter]
+  local shade = COLORS[letter]
   if not shade then
     return
   end
@@ -27,12 +28,11 @@ end
 -- Draws one picture with its middle at x, y. Every letter
 -- in the picture becomes one big coloured square.
 function drawPicture(pic, x, y, pixel)
-  SPOT.colors = pic.colors
   SPOT.pixel = pixel
   SPOT.left = x - pictureWidth(pic, pixel) / 2
   SPOT.top = y - pictureHeight(pic, pixel) / 2
-  for r = 1, #pic.rows do
-    drawPictureRow(pic.rows[r], r)
+  for r = 1, #pic do
+    drawPictureRow(pic[r], r)
   end
 end
 
@@ -83,6 +83,15 @@ function drawMenus()
   end
 end
 
+-- A dark band keeps the words readable on any backdrop.
+function drawWin()
+  gfx.setColor(Color[0])
+  gfx.rectangle("fill", 0, SCREEN_H / 2 - 70, SCREEN_W, 140)
+  gfx.setFont(WIN_FONT)
+  gfx.setColor(Color[15])
+  gfx.printf("You won!", 0, SCREEN_H / 2 - 48, SCREEN_W, "center")
+end
+
 function drawEverything()
   gfx.setColor(Color[BACKDROP])
   gfx.rectangle("fill", 0, 0, SCREEN_W, SCREEN_H)
@@ -90,4 +99,7 @@ function drawEverything()
   drawHero()
   drawCount()
   drawMenus()
+  if WON then
+    drawWin()
+  end
 end

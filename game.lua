@@ -14,6 +14,7 @@ HERO_PIXEL = 8
 FOOD_PIXEL = 6
 
 require("sprites")
+require("myart")
 require("world")
 require("show")
 
@@ -22,7 +23,7 @@ require("show")
 WANT = { }
 WANT.hero = "cat"
 WANT.food = "star"
-WANT.many = "10"
+WANT.many = 10
 WANT.speed = "walk"
 WANT.color = "black"
 
@@ -33,6 +34,7 @@ MENU.hero = false
 MENU.food = false
 
 STARTED = false
+WON = false
 
 function hero(name)
   WANT.hero = name
@@ -63,6 +65,13 @@ function love.update(dt)
   end
   moveHero(dt)
   eatFood()
+end
+
+-- After the last food, any key closes the game.
+function love.keypressed(key)
+  if WON then
+    love.event.quit()
+  end
 end
 
 function love.draw()

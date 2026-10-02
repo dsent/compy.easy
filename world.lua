@@ -57,7 +57,7 @@ function pickColor(name)
   return found or BACKDROPS.black
 end
 
--- "20" means twenty. Anything we cannot read means ten.
+-- 20 means twenty. Anything we cannot read means ten.
 -- Wild numbers are pulled back rather than refused.
 function pickCount(text)
   local n = tonumber(text)
@@ -75,11 +75,11 @@ function pickCount(text)
 end
 
 function pictureWidth(pic, pixel)
-  return string.len(pic.rows[1]) * pixel
+  return string.len(pic[1]) * pixel
 end
 
 function pictureHeight(pic, pixel)
-  return #pic.rows * pixel
+  return #pic * pixel
 end
 
 function randomSpot(span, size, low)
@@ -157,6 +157,8 @@ end
 -- Built once, on the first frame, after the child's own
 -- lines have had their say.
 function startGame()
+  HERO_NAMES = sortedNames(HEROES)
+  FOOD_NAMES = sortedNames(FOODS)
   HERO = { }
   HERO.pic = pickPicture(HEROES, WANT.hero, "cat", "hero")
   HERO.w = pictureWidth(HERO.pic, HERO_PIXEL)
@@ -238,5 +240,9 @@ function eatFood()
       COUNT = COUNT + 1
       sfx.ping()
     end
+  end
+  if COUNT == #FIELD and not WON then
+    WON = true
+    sfx.wow()
   end
 end

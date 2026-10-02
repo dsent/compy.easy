@@ -1,4 +1,4 @@
 require("game")
 hero("cat")
 food("star")
-many("20")
+many(20)
