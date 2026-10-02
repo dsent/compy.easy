@@ -47,7 +47,7 @@ PICTURES.turtle = {
   colors = {
     G = "green",
     E = "darkgreen",
-    Y = "gold",
+    Y = "olive",
     K = "black"
   }
 }
@@ -129,7 +129,7 @@ PICTURES.cheese = {
   },
   colors = {
     E = "yellow",
-    Y = "gold",
+    Y = "olive",
     K = "black"
   }
 }

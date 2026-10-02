@@ -88,18 +88,6 @@ commands, with two differences:
 | `mygame/` | the rest of `mygame` |
 | `.compy/build` | copies `engine.lua` and each folder into a project |
 
-## Deploying
-
-From the workspace root:
-
-```sh
-dev/tools/deploy-project easy
-dev/tools/deploy-project mygame
-```
-
-Each lands in `Documents/compy/projects/` on the SD card, keeping a
-backup of whatever was there.
-
 ## Screen
 
 Built against 1024x600. It reads the real screen size at startup, so
