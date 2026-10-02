@@ -1,10 +1,9 @@
--- Your own pictures go here. They use the colour letters
--- from the top of sprites.lua: R red, Y yellow, G green,
--- B blue, W white, K black, O orange, P pink, N brown,
--- C cyan, V violet, A gray. A dot leaves a square empty.
--- Every row in a picture must be the same length.
+-- Your own pictures. They work like the ones in sprites.lua:
+-- one letter per square, a dot for an empty one, and the
+-- letters from colors.lua. To play with one, add its name to
+-- the heroes or the foods in game.lua.
 
-KITTY = {
+PICTURES.kitty = {
   "..YY....YY..",
   "..YVY..YVY..",
   "..YYYYYYYY..",
@@ -16,10 +15,10 @@ KITTY = {
   "..YYYYYYYY..",
   "..YYY..YYY..",
   "..YVY..YVY..",
-  "..VVV..VVV..",
+  "..VVV..VVV.."
 }
 
-HEN = {
+PICTURES.hen = {
   "....R....",
   "....R....",
   "....W....",
@@ -35,10 +34,10 @@ HEN = {
   "..YYYYY..",
   "...YYY...",
   "...R.R...",
-  "..RR.RR..",
+  "..RR.RR.."
 }
 
-HOUSE = {
+PICTURES.house = {
   ".....RRRRRR.....",
   "....RRRRRRRR....",
   "...RRRRRRRRRR...",
@@ -52,10 +51,10 @@ HOUSE = {
   "KWWWWWRRRRWWWWWK",
   "KWWWWWRYRRWWWWWK",
   "KWWWWWRRRRWWWWWK",
-  "KWWWWWRRRRWWWWWK",
+  "KWWWWWRRRRWWWWWK"
 }
 
-WIZARD = {
+PICTURES.wizard = {
   "......C...",
   "......CC..",
   "....BBCCC.",
@@ -68,10 +67,10 @@ WIZARD = {
   ".VV....VV.",
   "VVV....VVV",
   "..........",
-  "........K.",
+  "........K."
 }
 
-TWINS = {
+PICTURES.twins = {
   "...........G",
   "G..........G",
   "......W.V...",
@@ -81,10 +80,10 @@ TWINS = {
   ".YGV...CCCCC",
   ".YYY...WYWCY",
   "........Y.CY",
-  "........YYYY",
+  "........YYYY"
 }
 
-FRAME = {
+PICTURES.frame = {
   "RRRRRRRRR",
   "R.......R",
   "R.......R",
@@ -94,12 +93,5 @@ FRAME = {
   "R.......K",
   "R.......K",
   "R.......K",
-  "RRRRVVRKV",
+  "RRRRVVRKV"
 }
-
-HEROES.kitty = KITTY
-HEROES.hen = HEN
-HEROES.house = HOUSE
-HEROES.wizard = WIZARD
-HEROES.twins = TWINS
-HEROES.frame = FRAME

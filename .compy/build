@@ -11,9 +11,11 @@
 # exactly as its manifest entry. Works relative to its own
 # location, is deterministic, and needs no network.
 #
-# mygame is the same game library with an empty main.lua: a
-# student types every line of their own game, the require
-# included.
+# Both share engine.lua and differ in the rest: easy has one
+# color list and plain lists of heroes and foods; mygame gives
+# each picture colors of its own and lets a hero or food name
+# point at any picture. mygame's main.lua is empty: a student
+# types every line of their own game, the require included.
 #
 set -eu
 
@@ -23,17 +25,13 @@ OUT="${1:?usage: .compy/build <out-dir> (absolute, fresh)}"
 emit_easy() {
   local d="$OUT/easy"
   mkdir -p "$d"
-  cp "$SRC"/*.lua "$SRC/LICENSE" "$SRC/README.md" "$d/"
+  cp "$SRC"/easy/*.lua "$SRC/engine.lua" "$SRC/LICENSE" "$SRC/README.md" "$d/"
 }
 
 emit_mygame() {
   local d="$OUT/mygame"
   mkdir -p "$d"
-  for f in "$SRC"/*.lua; do
-    if [ "$(basename "$f")" != main.lua ]; then cp "$f" "$d/"; fi
-  done
-  cp "$SRC/LICENSE" "$d/"
-  : > "$d/main.lua"
+  cp "$SRC"/mygame/*.lua "$SRC/engine.lua" "$SRC/LICENSE" "$d/"
 }
 
 emit_easy

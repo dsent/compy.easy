@@ -1,23 +1,11 @@
--- Pictures are drawn here as letters, one letter per big
--- square. A dot is empty. Every other letter is a colour
--- from the list just below.
+-- The pictures that come with the game. Each one is drawn
+-- as letters, one letter per big square: a dot is empty,
+-- every other letter is a color from colors.lua.
 -- Every row in a picture must be the same length.
 
-COLORS = { }
-COLORS.R = 10 -- red
-COLORS.Y = 14 -- yellow
-COLORS.G = 12 -- green
-COLORS.B = 9  -- blue
-COLORS.W = 15 -- white
-COLORS.K = 0  -- black
-COLORS.O = 24 -- orange
-COLORS.P = 30 -- pink
-COLORS.N = 25 -- brown
-COLORS.C = 28 -- cyan
-COLORS.V = 29 -- violet
-COLORS.A = 31 -- gray
+PICTURES = { }
 
-CAT = {
+PICTURES.cat = {
   "..YY....YY..",
   "..YPY..YPY..",
   "..YYYYYYYY..",
@@ -29,10 +17,10 @@ CAT = {
   "..YYYYYYYY..",
   "..YYYYYYYY..",
   "..YYY..YYY..",
-  "..YYY..YYY..",
+  "..YYY..YYY.."
 }
 
-TURTLE = {
+PICTURES.turtle = {
   ".....GG.....",
   "GGG.GGGG.GGG",
   "GGGOKGGKOGGG",
@@ -44,10 +32,10 @@ TURTLE = {
   "..GNOGGONG..",
   ".GGNNOONNGG.",
   "GGG.NNNN.GGG",
-  "GGG..GG..GGG",
+  "GGG..GG..GGG"
 }
 
-UFO = {
+PICTURES.ufo = {
   "....CCCC....",
   "...CCCCCC...",
   "..CCCCCCCC..",
@@ -58,10 +46,10 @@ UFO = {
   "..AAAAAAAA..",
   "...A....A...",
   "..PP....PP..",
-  "............",
+  "............"
 }
 
-MOUSE = {
+PICTURES.mouse = {
   ".WWW....WWW.",
   "WPPPW..WPPPW",
   "WWPPWWWWPPWW",
@@ -73,10 +61,10 @@ MOUSE = {
   "..WWWAAWWW.W",
   "..WWWAAWWWWW",
   "...WW..WW...",
-  "....W..W....",
+  "....W..W...."
 }
 
-STAR = {
+PICTURES.star = {
   "....Y....",
   "...YYY...",
   "YY.YWY.YY",
@@ -85,10 +73,10 @@ STAR = {
   "..YYYYY..",
   ".YWYYYWY.",
   "YWYY.YYWY",
-  "YY.....YY",
+  "YY.....YY"
 }
 
-CHEESE = {
+PICTURES.cheese = {
   ".....OOOOO",
   "...OOOOYYY",
   ".OOOYKYYYY",
@@ -98,10 +86,10 @@ CHEESE = {
   "YKYYYYYYY.",
   "YYYKKYYY..",
   "YYYKKYY...",
-  "YYYYYY....",
+  "YYYYYY...."
 }
 
-APPLE = {
+PICTURES.apple = {
   "....N.GG..",
   ".RR.NGGRR.",
   "RRRRNGRRRR",
@@ -111,10 +99,10 @@ APPLE = {
   "RRRRRRRRRR",
   ".RRRRRRRR.",
   "..RRRRRR..",
-  "...RRRR...",
+  "...RRRR..."
 }
 
-DOG = {
+PICTURES.dog = {
   "..ON...NO..",
   "...NONON...",
   "...OKNKO...",
@@ -123,10 +111,10 @@ DOG = {
   "...ONNNO.O.",
   "...ONONO.N.",
   "...OO.OONN.",
-  "..OOO.OOO..",
+  "..OOO.OOO.."
 }
 
-FOX = {
+PICTURES.fox = {
   "..O......O....",
   "..OO....OO....",
   "..OYO..OYO....",
@@ -138,12 +126,12 @@ FOX = {
   "..OOYYYYOO.OOY",
   "..OOOYYOOOOOOY",
   "..OYO..OYOOOO.",
-  "..YYY..YYYOOO.",
+  "..YYY..YYYOOO."
 }
 
 -- The first fox, kept as its own picture. Nothing a child was
 -- given is taken away when a redrawn version arrives.
-POKEFOX = {
+PICTURES.pokefox = {
   "..O...O.....",
   ".OOO.OOO....",
   "YOOOOOOOOY..",
@@ -154,10 +142,10 @@ POKEFOX = {
   "OOYYYYYYOOYY",
   ".OYYYYYYOOY.",
   ".OOYOOYOO...",
-  "..YYOOYY....",
+  "..YYOOYY...."
 }
 
-CHICKEN = {
+PICTURES.chicken = {
   ".....R.....",
   "....KWK....",
   "....YYY....",
@@ -170,10 +158,10 @@ CHICKEN = {
   "..YWYYYWY..",
   "...YY.YY...",
   "....O.O....",
-  "...OO.OO...",
+  "...OO.OO..."
 }
 
-SQUISH = {
+PICTURES.squish = {
   "..A..",
   "..A..",
   "..A..",
@@ -183,10 +171,10 @@ SQUISH = {
   "VPPPV",
   "VVPVV",
   "VPPPV",
-  ".VVV.",
+  ".VVV."
 }
 
-TREE = {
+PICTURES.tree = {
   ".....GG.....",
   "....GGGG....",
   "...GGGGGG...",
@@ -197,10 +185,10 @@ TREE = {
   ".....NN.....",
   ".....NN.....",
   ".....NN.....",
-  "............",
+  "............"
 }
 
-DINO = {
+PICTURES.dino = {
   ".......GGG..",
   "......GGGGG.",
   "......GKGGG.",
@@ -211,10 +199,10 @@ DINO = {
   "GGGGGGGGGG..",
   ".GGGGGGGG...",
   "..GG..GG....",
-  "..GG..GG....",
+  "..GG..GG...."
 }
 
-DIPLO = {
+PICTURES.diplo = {
   ".GGG..........",
   ".GKG..........",
   "..GG..........",
@@ -223,10 +211,10 @@ DIPLO = {
   "..GGGGGGGGGGG.",
   "..GGGGGGGGGG..",
   "...GG....GG...",
-  "...NN....NN...",
+  "...NN....NN..."
 }
 
-TORNADO = {
+PICTURES.tornado = {
   "AAAAAAAAAAAA",
   "WWWWWWWWWWWW",
   ".AAAAAAAAAA.",
@@ -237,10 +225,10 @@ TORNADO = {
   ".....WW.....",
   ".....AA.....",
   ".....WW.....",
-  "......A.....",
+  "......A....."
 }
 
-METEOR = {
+PICTURES.meteor = {
   ".....R..R....",
   "...RYYRRYR...",
   "..ROOOOOOR...",
@@ -249,20 +237,20 @@ METEOR = {
   ".RYOAAAKAOR..",
   "..ROAAAAOOR..",
   "...ROOOOOR...",
-  "....RRRRR....",
+  "....RRRRR...."
 }
 
-SPIDER = {
+PICTURES.spider = {
   "..W...W..",
   "...VVV...",
   "YYYVVVYYY",
   "Y..VVV..Y",
   "...VVV...",
   "YYYVVVYYY",
-  "Y.......Y",
+  "Y.......Y"
 }
 
-HAMSTER = {
+PICTURES.hamster = {
   ".N....N.",
   ".NNNNNN.",
   ".NBNNBN.",
@@ -271,10 +259,10 @@ HAMSTER = {
   ".NNNNNN.",
   "NNKNNKNN",
   "NNKNNKNN",
-  ".NNNNNN.",
+  ".NNNNNN."
 }
 
-ROCKET = {
+PICTURES.rocket = {
   ".....BB.....",
   "....CCCC....",
   "....BBBB....",
@@ -286,10 +274,10 @@ ROCKET = {
   "..AAAAAAAA..",
   ".AAAAAAAAAA.",
   "...WW..WW...",
-  "...VP..PV...",
+  "...VP..PV..."
 }
 
-FISH2 = {
+PICTURES.fish = {
   "...BCC....",
   "....BCC...",
   "BCC..BCC..",
@@ -299,29 +287,29 @@ FISH2 = {
   ".BC.CCCCC.",
   "BCC..BCC..",
   "....BCC...",
-  "...BCC....",
+  "...BCC...."
 }
 
-BEE = {
+PICTURES.bee = {
   "..A..A..",
   "..AAAA..",
   "CCYYYYCC",
   "CCAAAACC",
   ".CYYYYC.",
   "..AAAA..",
-  "...AA...",
+  "...AA..."
 }
 
-RAINBOW = {
+PICTURES.rainbow = {
   "....PPPPP....",
   "...PCCCCCP...",
   "..PCGGGGGCP..",
   ".PCGYYYYYGCP.",
   "PCGYRRRRRYGCP",
   "PCGYR...RYGCP",
-  "PCGYR...RYGCP",
+  "PCGYR...RYGCP"
 }
-ACORN = {
+PICTURES.acorn = {
   "...N...",
   "...N...",
   "..NNN..",
@@ -331,22 +319,11 @@ ACORN = {
   ".OOOOO.",
   ".OOOOO.",
   "..OOO..",
-  "...O...",
-}
-
-LEMON = {
-  ".GG........",
-  ".GG........",
-  ".GGYYYYYYY.",
-  "..YYYYYYYYY",
-  "..YYYYYYYYY",
-  "..YYYYYYYYY",
-  "....YYYYYYY",
-  "....YYYYYY.",
+  "...O..."
 }
 
 -- The lemon that eats, with the eyes and teeth to prove it.
-LEMON2 = {
+PICTURES.lemon = {
   ".GG........",
   ".GG........",
   ".GGYYYYYYY.",
@@ -354,18 +331,18 @@ LEMON2 = {
   "..YYYYYYYYY",
   "..YYKKKKKYY",
   "....KWKWKYY",
-  "....YYYYYY.",
+  "....YYYYYY."
 }
 
-FISH = {
+PICTURES.smallfish = {
   "AAAAA.AA",
   "AKAAAAAA",
   "AAPKAAAA",
   "KKKKAAAA",
-  "AAAAA.AA",
+  "AAAAA.AA"
 }
 
-DROPLET = {
+PICTURES.droplet = {
   "....B....",
   "...BCB...",
   "...BCB...",
@@ -374,10 +351,10 @@ DROPLET = {
   ".BCCWCCB.",
   ".BCCCCCB.",
   "..BCCCB..",
-  "...BBB...",
+  "...BBB..."
 }
 
-LIGHTNING = {
+PICTURES.lightning = {
   "....YYY..",
   "...YYY...",
   "..YYY....",
@@ -386,48 +363,5 @@ LIGHTNING = {
   "....YYY..",
   "...YYY...",
   "..YYY....",
-  ".YY......",
+  ".YY......"
 }
--- The heroes a child can choose. The first one is what
--- they get when the word is not one of these.
-HEROES = { }
-HEROES.cat = CAT
-HEROES.turtle = TURTLE
-HEROES.ufo = UFO
-HEROES.mouse = MOUSE
-HEROES.dog = DOG
-HEROES.fox = FOX
-HEROES.pokefox = POKEFOX
-HEROES.chicken = CHICKEN
-HEROES.squish = SQUISH
-HEROES.tree = TREE
-HEROES.dino = DINO
-HEROES.diplo = DIPLO
-HEROES.tornado = TORNADO
-HEROES.meteor = METEOR
-HEROES.spider = SPIDER
-HEROES.hamster = HAMSTER
-HEROES.bee = BEE
-HEROES.rocket = ROCKET
-HEROES.fish = FISH
-HEROES.lemon = LEMON2
-
--- The menus list every picture, in alphabetical order.
-function sortedNames(set)
-  local names = {}
-  for name in pairs(set) do names[#names + 1] = name end
-  table.sort(names)
-  return names
-end
-
--- The foods a child can choose, same rule.
-FOODS = { }
-FOODS.star = STAR
-FOODS.cheese = CHEESE
-FOODS.apple = APPLE
-FOODS.acorn = ACORN
-FOODS.lemon = LEMON
-FOODS.droplet = DROPLET
-FOODS.lightning = LIGHTNING
-FOODS.rainbow = RAINBOW
-FOODS.fish = FISH2
