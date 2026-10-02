@@ -204,11 +204,11 @@ DINO = {
   ".......GGG..",
   "......GGGGG.",
   "......GKGGG.",
-  "N.....GGGGG.",
-  "NN...GGGGG..",
-  "NGGGGGGGG...",
+  "G.....GGGGG.",
+  "GG...GGGGG..",
+  "GGGGGGGGG...",
   "GGGGGGGGGG..",
-  "NGGGGGGGGG..",
+  "GGGGGGGGGG..",
   ".GGGGGGGG...",
   "..GG..GG....",
   "..GG..GG....",
@@ -412,7 +412,7 @@ HEROES.rocket = ROCKET
 HEROES.fish = FISH
 HEROES.lemon = LEMON2
 
--- The menus list every picture above, in alphabetical order.
+-- The menus list every picture, in alphabetical order.
 function sortedNames(set)
   local names = {}
   for name in pairs(set) do names[#names + 1] = name end

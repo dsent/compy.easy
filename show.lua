@@ -2,7 +2,7 @@
 
 COUNT_FONT = gfx.newFont(56)
 WIN_FONT = gfx.newFont(96)
-NAME_FONT = gfx.newFont(18)
+NAME_FONT = gfx.newFont(16)
 
 -- Where the picture being drawn right now sits, so the
 -- helpers below do not need long lists of numbers.
@@ -59,27 +59,44 @@ end
 
 -- Shown only when a word was not one we know. The child
 -- picks a picture and types the word under it.
-function drawChoices(set, names, y)
+function drawChoices(set, names, y, first, last)
   gfx.setColor(Color[0])
   gfx.rectangle("fill", 0, y - 46, SCREEN_W, 92)
-  local gap = SCREEN_W / (#names + 1)
+  local gap = SCREEN_W / (last - first + 2)
   gfx.setFont(NAME_FONT)
-  for i = 1, #names do
-    local x = gap * i
-    drawPicture(set[names[i]], x, y - 14, 4)
+  for i = first, last do
+    local x = gap * (i - first + 1)
+    drawPicture(set[names[i]], x, y - 14, 3)
     gfx.setColor(Color[15])
-    gfx.printf(names[i], x - gap / 2, y + 14, gap, "center")
+    gfx.printf(names[i], x - gap / 2, y + 20, gap, "center")
   end
+end
+
+-- No more than this many pictures share one row, so each
+-- name has room.
+PER_ROW = 13
+
+-- Draws a whole menu, in as many rows as it needs, with its
+-- last row at bottom. Hands back where the next menu goes.
+function drawMenu(set, names, bottom)
+  local rows = math.ceil(#names / PER_ROW)
+  local y = bottom - (rows - 1) * 90
+  for r = 1, rows do
+    local first = (r - 1) * PER_ROW + 1
+    local last = math.min(r * PER_ROW, #names)
+    drawChoices(set, names, y, first, last)
+    y = y + 90
+  end
+  return bottom - rows * 90
 end
 
 function drawMenus()
   local row = SCREEN_H - 46
   if MENU.food then
-    drawChoices(FOODS, FOOD_NAMES, row)
-    row = row - 90
+    row = drawMenu(FOODS, FOOD_NAMES, row)
   end
   if MENU.hero then
-    drawChoices(HEROES, HERO_NAMES, row)
+    drawMenu(HEROES, HERO_NAMES, row)
   end
 end
 

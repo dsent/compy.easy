@@ -169,6 +169,7 @@ function startGame()
   FOOD_PIC = pickPicture(FOODS, WANT.food, "star", "food")
   BACKDROP = pickColor(WANT.color)
   COUNT = 0
+  WON = false
   spawnFoods(pickCount(WANT.many))
 end
 

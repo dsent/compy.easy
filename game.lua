@@ -14,9 +14,9 @@ HERO_PIXEL = 8
 FOOD_PIXEL = 6
 
 require("sprites")
-require("myart")
 require("world")
 require("show")
+require("myart")
 
 -- What the child asked for. These are the answers used
 -- when a line is missing from their program.
@@ -34,7 +34,6 @@ MENU.hero = false
 MENU.food = false
 
 STARTED = false
-WON = false
 
 function hero(name)
   WANT.hero = name
@@ -67,9 +66,12 @@ function love.update(dt)
   eatFood()
 end
 
--- After the last food, any key closes the game.
+-- After the last food, any key but an arrow closes the
+-- game. The arrows may still be down from walking.
 function love.keypressed(key)
-  if WON then
+  local arrow = key == "up" or key == "down"
+    or key == "left" or key == "right"
+  if WON and not arrow then
     love.event.quit()
   end
 end

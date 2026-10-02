@@ -22,14 +22,14 @@ Every line has the same shape — one word, a bracket, a word in quotes.
 
 | Line | What it does |
 | --- | --- |
-| `hero("cat")` | who the player controls — `cat`, `turtle`, `ufo`, `mouse`, `dog`, `fox`, `chicken`, `squish`, `tree`, `dino`, `tornado`, `spider`, `hamster`, `bee`, `rocket`, `fish` |
+| `hero("cat")` | who the player controls — `bee`, `cat`, `chicken`, `dino`, `diplo`, `dog`, `fish`, `fox`, `hamster`, `lemon`, `meteor`, `mouse`, `pokefox`, `rocket`, `spider`, `squish`, `tornado`, `tree`, `turtle`, `ufo`, and from `myart.lua` `frame`, `hen`, `house`, `kitty`, `twins`, `wizard` |
 | `food("star")` | what the player collects — `star`, `cheese`, `apple`, `acorn`, `lemon`, `droplet`, `lightning`, `rainbow`, `fish` |
 | `many(20)` | how many there are, 1 to 40 |
 | `speed("fast")` | how fast the hero walks — `walk`, `slow`, `fast` |
 | `color("blue")` | the backdrop — `black`, `blue`, `red`, `magenta`, `green`, `cyan`, `yellow`, `white` |
 
 A word that is not in the list is not an error. The game takes the
-first choice instead and shows the pictures to choose from along the
+word in the example line instead and shows the pictures to choose from along the
 bottom of the screen.
 
 A missing line is not an error either: every line has an answer the
@@ -43,7 +43,7 @@ it and the counter in the corner goes up by one.
 
 There is nothing to lose. No enemies, no timer, no game over. When the
 last food is collected the game cheers and shows "You won!". Any key
-then closes it.
+but an arrow then closes it.
 
 `Ctrl+Q` leaves the game.
 
@@ -54,7 +54,7 @@ then closes it.
 | `main.lua` | the child's four lines |
 | `game.lua` | the five commands, and the start of every frame |
 | `sprites.lua` | the colour letters and the pictures, drawn as letters — one letter per big square |
-| `myart.lua` | your own pictures, added to the heroes |
+| `myart.lua` | your own pictures, added to the heroes: `hero("kitty")` plays one |
 | `world.lua` | building the game, walking, collecting |
 | `show.lua` | putting it on the screen |
 
