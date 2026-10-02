@@ -49,10 +49,6 @@ FOODS.lightning = "lightning"
 FOODS.rainbow = "rainbow"
 FOODS.star = "star"
 
--- The most food one game can have. many(100) still gives
--- only this many.
-MOST = 40
-
 -- How fast the hero walks, in dots of the screen each
 -- second: speed("fast") in main.lua.
 SPEEDS = { }
@@ -78,6 +74,10 @@ FOOD_PIXEL = 6
 
 -- What the screen says when the last food is gone.
 WIN_WORDS = "You won!"
+
+-- The most food one game can have. many(100) still gives
+-- only this many.
+MOST = 40
 
 -- How the game works.
 require("engine")
