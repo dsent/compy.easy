@@ -4,11 +4,14 @@
 
 require("colors")
 require("sprites")
+require("mypicture")
 require("myart")
 
 -- The heroes you can play as: hero("cat") in main.lua.
--- Each name points at a picture in sprites.lua or myart.lua.
+-- Each name points at a picture in sprites.lua, mypicture.lua
+-- or myart.lua.
 HEROES = { }
+HEROES.mypicture = "mypicture"
 HEROES.bee = "bee"
 HEROES.cat = "cat"
 HEROES.chicken = "chicken"

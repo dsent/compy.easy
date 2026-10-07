@@ -71,13 +71,16 @@ the same language they just wrote.
 `.compy/build` also emits `mygame`, for older students, with an empty
 `main.lua`: a student types every line of their own game,
 `require("game")` included. It has the same three levels and the same
-commands, with two differences:
+commands, with three differences:
 
 - Each picture has its own colors: `colors = { Y = "yellow" }` names a
   color from `mygame/colors.lua` for each letter it uses.
 - The heroes and foods in `game.lua` are names that point at pictures:
   `HEROES.fish = "smallfish"` and `FOODS.fish = "fish"` make one word
   mean a different picture as a hero and as a food.
+- `mypicture.lua` holds one picture a student types in row by row,
+  `MY_PICTURE[1]` to `MY_PICTURE[8]`, with its colors; `hero("mypicture")`
+  plays as it.
 
 ## The repository
 
