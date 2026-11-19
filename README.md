@@ -43,7 +43,7 @@ it and the counter in the corner goes up by one.
 
 There is nothing to lose. No enemies, no timer, no game over. When the
 last food is collected the game cheers and shows "You won!". Press
-`Space` (or `Esc`) to close it.
+`Space` to play again, or `Esc` to leave.
 
 `Esc` or `Ctrl+Q` leaves the game.
 
