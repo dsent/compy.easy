@@ -52,8 +52,8 @@ function love.update(dt)
   eatFood()
 end
 
--- After the last food, any key but an arrow closes the
--- game. The arrows may still be down from walking.
+-- After the last food, Space closes the game. Arrows stay
+-- ignored because one may still be down from walking.
 ARROWS = {
   up = true,
   down = true,
@@ -62,11 +62,18 @@ ARROWS = {
 }
 
 function love.keypressed(key)
+  local skip = key == "escape" or Key.is_mod(key)
+  if skip then
+    return
+  end
   local closing = WON and not ARROWS[key]
   if closing then
-    love.event.quit()
+    stop()
   end
 end
+
+compy.input.shortcuts.keypressed.escape = compy.input.fn.
+    stop_here(compy.input.fn.ignore_repeat(stop))
 
 function love.draw()
   if not STARTED then

@@ -42,10 +42,10 @@ Walk off one edge and come back on the other. Touching a food collects
 it and the counter in the corner goes up by one.
 
 There is nothing to lose. No enemies, no timer, no game over. When the
-last food is collected the game cheers and shows "You won!". Any key
-but an arrow then closes it.
+last food is collected the game cheers and shows "You won!". Press
+`Space` (or `Esc`) to close it.
 
-`Ctrl+Q` leaves the game.
+`Esc` or `Ctrl+Q` leaves the game.
 
 ## The files
 
