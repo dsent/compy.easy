@@ -52,23 +52,14 @@ function love.update(dt)
   eatFood()
 end
 
--- After the last food, Space closes the game. Arrows stay
--- ignored because one may still be down from walking.
-ARROWS = {
-  up = true,
-  down = true,
-  left = true,
-  right = true
-}
-
-function love.keypressed(key)
-  local skip = key == "escape" or Key.is_mod(key)
-  if skip then
+-- After the last food, Space starts a new game.
+function love.keypressed(key, _, isrepeat)
+  if isrepeat then
     return
   end
-  local closing = WON and not ARROWS[key]
-  if closing then
-    stop()
+  local play_again = WON and key == "space"
+  if play_again then
+    startGame()
   end
 end
 
@@ -232,8 +223,6 @@ function spawnFoods(how_many)
   end
 end
 
--- Built once, on the first frame, after the child's own
--- lines have had their say.
 function makeHero()
   HERO = { }
   HERO.pic = pickPicture(HEROES, WANT.hero, "cat")
@@ -338,6 +327,8 @@ end
 
 COUNT_FONT = gfx.newFont(56)
 WIN_FONT = gfx.newFont(96)
+HINT_FONT = gfx.newFont(32)
+WIN_HINT = "Space to play again   Esc to leave"
 
 -- Where the picture being drawn right now sits, so the
 -- helpers below do not need long lists of numbers.
@@ -396,17 +387,14 @@ end
 
 -- A dark band keeps the words readable on any backdrop.
 function drawWin()
+  local mid = SCREEN_H / 2
   gfx.setColor(Color[0])
-  gfx.rectangle("fill", 0, SCREEN_H / 2 - 70, SCREEN_W, 140)
+  gfx.rectangle("fill", 0, mid - 100, SCREEN_W, 200)
   gfx.setFont(WIN_FONT)
   gfx.setColor(Color[15])
-  gfx.printf(
-    WIN_WORDS,
-    0,
-    SCREEN_H / 2 - 48,
-    SCREEN_W,
-    "center"
-  )
+  gfx.printf(WIN_WORDS, 0, mid - 80, SCREEN_W, "center")
+  gfx.setFont(HINT_FONT)
+  gfx.printf(WIN_HINT, 0, mid + 40, SCREEN_W, "center")
 end
 
 function drawEverything()
